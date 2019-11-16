@@ -178,3 +178,16 @@ class SaasAPIView(viewsets.ViewSet):
         #实例销毁通知接口
         elif request.data.get("action") == 'destroyInstance':
             return {"success": True}
+
+    @list_route(methods=['GET'])
+    @Core_connector()
+    def test(self, request):
+
+        logger.info("""
+            request data: \n
+             --- {} --- \n
+             --- {} ---
+        """.format(request.query_params,request.data))
+
+        Users.object.filter().count()
+        return {"test":"test"}
