@@ -1,4 +1,5 @@
 
+import os
 
-TOKEN = "Jz42PV7Bz1aVVV7vl2N26pcLlpzL67"
+TOKEN = os.environ.get('TOKEN', '123')
 AUTHKEY = "bdc51a1b"

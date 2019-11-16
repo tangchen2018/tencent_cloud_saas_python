@@ -21,6 +21,6 @@ RUN pip install --upgrade pip \
 
 
 
-CMD uwsgi /project/server/education/wsgi/uwsgi.ini
+CMD uwsgi /project/server/project/wsgi/uwsgi.ini
 #CMD ["python", "/project/sso/manage.py crontab remove"]
 #CMD ["python", "/project/sso/manage.py crontab add"]
