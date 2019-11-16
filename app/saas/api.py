@@ -26,10 +26,10 @@ class SaasAPIView(viewsets.ViewSet):
              --- {} ---
         """.format(request.query_params,request.data))
 
-        signCheckForTx(
-            request.query_params.get("signature"),
-            request.query_params.get("timestamp"),
-            request.query_params.get("eventId"))
+        # signCheckForTx(
+        #     request.query_params.get("signature"),
+        #     request.query_params.get("timestamp"),
+        #     request.query_params.get("eventId"))
 
         #身份校验
         if request.data.get("action") == 'verifyInterface':

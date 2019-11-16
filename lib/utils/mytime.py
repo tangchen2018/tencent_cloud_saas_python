@@ -111,16 +111,29 @@ class UtilTime(object):
 
 
 if __name__ == '__main__':
-    # ut = UtilTime()
-    #
-    # print(ut.timestamp)
-    #
-    # print(ut.today.shift(seconds=-30).timestamp)
-    # import hashlib
-    #
-    # data="yiPl98ZY-aX6KqEtr-bdc51a1b"
-    # sha = hashlib.sha1()
-    # sha.update(data.encode())
-    # print(sha.hexdigest())
-    pass
+
+    import hashlib
+    def sortKeyStringForDict(data):
+        s = ""
+        for item in sorted({k: v for k, v in data.items() if v != ""}):
+            s += data[item]
+
+        print(s)
+        return s
+
+
+    def sha256hex(data):
+        sha = hashlib.sha256()
+        sha.update(data.encode())
+        return sha.hexdigest()
+
+    stringNew = sortKeyStringForDict(dict(
+        token = "Jz42PV7Bz1aVVV7vl2N26pcLlpzL67",
+        timestamp="1573929059",
+        eventId="1602635970"
+    ))
+
+    sign = sha256hex(stringNew)
+
+    print(sign)
 
