@@ -189,5 +189,5 @@ class SaasAPIView(viewsets.ViewSet):
              --- {} ---
         """.format(request.query_params,request.data))
 
-        Users.object.filter().count()
+        Users.objects.filter().count()
         return {"test":"test"}
