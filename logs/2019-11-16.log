@@ -1,0 +1,236 @@
+INFO [2019-11-16 22:28:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 17388 17428 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1573914261'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-16 22:28:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 17388 17428 
+ 	 ÇëÇótimestampÒÑ¾­³¬Ê±! 
+
+ERROR [2019-11-16 22:28:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 17388 17428 
+ 	 [SaasAPIView : saasapi  ] : [¾Ü¾ø·ÃÎÊ!];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 25 in signCheckForTx
+raise PubErrorCustom("¾Ü¾ø·ÃÎÊ!")
+ 
+
+INFO [2019-11-16 22:28:50] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 472 5960 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:28:50] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 472 5960 
+ 	 [SaasAPIView : saasapi  ] : ['list' object has no attribute 'items'];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 30 in signCheckForTx
+eventId=eventId
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 11 in sortKeyStringForDict
+for key,value in sorted({k: v for k, v in data.items() if v != ""}).items():
+ 
+
+INFO [2019-11-16 22:29:42] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 364 17208 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:29:42] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 364 17208 
+ 	 [SaasAPIView : saasapi  ] : ['list' object has no attribute 'items'];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 32 in signCheckForTx
+eventId=eventId
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 13 in sortKeyStringForDict
+for key,value in res.items():
+ 
+
+INFO [2019-11-16 22:30:03] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 5088 17492 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:30:03] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 5088 17492 
+ 	 [SaasAPIView : saasapi  ] : ['list' object has no attribute 'items'];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 33 in signCheckForTx
+eventId=eventId
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 14 in sortKeyStringForDict
+for key,value in res.items():
+ 
+
+INFO [2019-11-16 22:31:40] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 16660 18940 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:31:40] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 16660 18940 
+ 	 [SaasAPIView : saasapi  ] : [can only concatenate str (not "NoneType") to str];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 30 in signCheckForTx
+eventId=eventId
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 12 in sortKeyStringForDict
+s+=data[item]
+ 
+
+INFO [2019-11-16 22:32:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18928 6984 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:32:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 18928 6984 
+ 	 [SaasAPIView : saasapi  ] : [can only concatenate str (not "NoneType") to str];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 30 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 31 in signCheckForTx
+eventId=eventId
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 13 in sortKeyStringForDict
+s+=data[item]
+ 
+
+INFO [2019-11-16 22:34:34] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18356 8132 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-16 22:34:34] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18356 8132 
+ 	 e3k9ierw----996260ef9c7eb076c19fd339d5b2d1d12e2654ffc5ff7b280443894fafe5cf70 
+
+ERROR [2019-11-16 22:34:34] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 18356 8132 
+ 	 [SaasAPIView : saasapi  ] : [Ç©Ãû´íÎó!];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 29 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 39 in signCheckForTx
+raise PubErrorCustom("Ç©Ãû´íÎó!")
+ 
+
+INFO [2019-11-16 22:35:20] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18676 17208 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-16 22:35:20] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18676 17208 
+ 	 e3k9ierw----996260ef9c7eb076c19fd339d5b2d1d12e2654ffc5ff7b280443894fafe5cf70 
+
+ERROR [2019-11-16 22:35:20] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 18676 17208 
+ 	 [SaasAPIView : saasapi  ] : [Ç©Ãû´íÎó!];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 29 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 40 in signCheckForTx
+raise PubErrorCustom("Ç©Ãû´íÎó!")
+ 
+
+INFO [2019-11-16 22:35:54] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 17152 19004 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+ERROR [2019-11-16 22:35:54] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 17152 19004 
+ 	 [SaasAPIView : saasapi  ] : ['NoneType' object has no attribute 'hexdigest'];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 29 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 32 in signCheckForTx
+sign = sha256hex(stringNew)
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 17 in sha256hex
+return hashlib.sha256().update(data.encode()).hexdigest()
+ 
+
+INFO [2019-11-16 22:36:56] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 6432 14444 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-16 22:36:56] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 6432 14444 
+ 	 e3k9ierw----996260ef9c7eb076c19fd339d5b2d1d12e2654ffc5ff7b280443894fafe5cf70 
+
+ERROR [2019-11-16 22:36:56] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 6432 14444 
+ 	 [SaasAPIView : saasapi  ] : [Ç©Ãû´íÎó!];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 29 in saasapi
+request.query_params.get("eventId"))
+;C:\Users\Tc\Desktop\saasTx\app\saas\utils.py line: 38 in signCheckForTx
+raise PubErrorCustom("Ç©Ãû´íÎó!")
+ 
+
+INFO [2019-11-16 22:37:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18332 3252 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-16 22:37:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 18332 3252 
+ 	 [SaasAPIView : saasapi]Training complete in 0.002995 real seconds 
+

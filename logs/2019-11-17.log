@@ -1,0 +1,549 @@
+INFO [2019-11-17 00:32:35] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 22464 6980 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'verifyInterface', 'echoback': 'Albert Einstein'} ---
+         
+
+INFO [2019-11-17 00:32:35] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 22464 6980 
+ 	 [SaasAPIView : saasapi]Training complete in 0.000994 real seconds 
+
+INFO [2019-11-17 00:33:04] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 22464 26840 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:33:04] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 22464 26840 
+ 	 [SaasAPIView : saasapi  ] : [local variable 'userObj' referenced before assignment];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 44 in saasapi
+except userObj.DoesNotExist:
+ 
+
+INFO [2019-11-17 00:33:49] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27288 27408 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:33:50] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 27288 27408 
+ 	 [SaasAPIView : saasapi  ] : [(1406, "Data too long for column 'signId' at row 1")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 70 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 29 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\utils.py line: 89 in __exit__
+raise dj_exc_value.with_traceback(traceback) from exc_value
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 71 in execute
+return self.cursor.execute(query, args)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 209 in execute
+res = self._query(query)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 315 in _query
+db.query(q)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\connections.py line: 226 in query
+_mysql.connection.query(self, query)
+ 
+
+INFO [2019-11-17 00:35:12] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 25872 25248 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:35:13] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 25872 25248 
+ 	 [SaasAPIView : saasapi  ] : [(1406, "Data too long for column 'signId' at row 1")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 70 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 29 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\utils.py line: 89 in __exit__
+raise dj_exc_value.with_traceback(traceback) from exc_value
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 71 in execute
+return self.cursor.execute(query, args)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 209 in execute
+res = self._query(query)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 315 in _query
+db.query(q)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\connections.py line: 226 in query
+_mysql.connection.query(self, query)
+ 
+
+INFO [2019-11-17 00:36:05] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26068 10920 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:36:05] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 26068 10920 
+ 	 [SaasAPIView : saasapi  ] : [(1406, "Data too long for column 'signId' at row 1")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 70 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 30 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\utils.py line: 89 in __exit__
+raise dj_exc_value.with_traceback(traceback) from exc_value
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 71 in execute
+return self.cursor.execute(query, args)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 209 in execute
+res = self._query(query)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\cursors.py line: 315 in _query
+db.query(q)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\MySQLdb\connections.py line: 226 in query
+_mysql.connection.query(self, query)
+ 
+
+INFO [2019-11-17 00:38:05] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27224 27200 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:38:05] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 27224 27200 
+ 	 [SaasAPIView : saasapi  ] : [(1048, "Column 'openId' cannot be null")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 70 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 29 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 76 in execute
+raise utils.IntegrityError(*tuple(e.args))
+ 
+
+INFO [2019-11-17 00:40:53] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 23636 27580 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:40:53] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 23636 27580 
+ 	 [SaasAPIView : saasapi  ] : [(1048, "Column 'openId' cannot be null")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 71 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 29 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 76 in execute
+raise utils.IntegrityError(*tuple(e.args))
+ 
+
+INFO [2019-11-17 00:42:16] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 21292 26852 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:42:16] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 21292 26852 
+ 	 [SaasAPIView : saasapi  ] : [(1048, "Column 'openId' cannot be null")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 73 in saasapi
+uid = userObj.uid
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 417 in create
+obj.save(force_insert=True, using=self.db)
+;C:\Users\Tc\Desktop\saasTx\app\saas\models.py line: 29 in save
+return super(Saas, self).save(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 842 in _save_table
+result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 880 in _do_insert
+using=using, raw=raw)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 1125 in _insert
+return query.get_compiler(using=using).execute_sql(return_id)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1285 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 76 in execute
+raise utils.IntegrityError(*tuple(e.args))
+ 
+
+INFO [2019-11-17 00:42:40] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26380 27240 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', 'openId': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+ERROR [2019-11-17 00:42:40] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 26380 27240 
+ 	 [SaasAPIView : saasapi  ] : [local variable 'password' referenced before assignment];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 97 in saasapi
+"value": password
+ 
+
+INFO [2019-11-17 00:43:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26268 27096 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', 'openId': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+INFO [2019-11-17 00:43:28] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26268 27096 
+ 	 [SaasAPIView : saasapi]Training complete in 0.086765 real seconds 
+
+INFO [2019-11-17 00:44:06] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26284 26688 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', 'openId': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+INFO [2019-11-17 00:44:06] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26284 26688 
+ 	 [SaasAPIView : saasapi]Training complete in 0.074805 real seconds 
+
+INFO [2019-11-17 00:45:46] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26284 26936 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'createInstance', 'orderId': '20170109199524', 'accountId': '123545678', 'openId': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': 'fab8a029-22fa-41b1-ac08-5cdde878ed04', 'productInfo': {'productName': '云服务市场测试商品', 'isTrail': 'false', 'spec': '普通版', 'timeSpan': 2, 'timeUnit': 'm'}} ---
+         
+
+INFO [2019-11-17 00:45:46] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 26284 26936 
+ 	 [SaasAPIView : saasapi]Training complete in 0.013961 real seconds 
+
+INFO [2019-11-17 00:52:09] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27928 28080 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'renewInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '3c45e1f3-22b9-4346-9898-4467d3aea000', 'signId': 'kjsadkjhdskjh3k', 'expiredTime': '2017-02-09 19:59:59'} ---
+         
+
+ERROR [2019-11-17 00:52:09] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 27928 28080 
+ 	 [SaasAPIView : saasapi  ] : [Cannot resolve keyword 'accountId' into field. Choices are: endtime, founder_groupid, gid, groupid, is_bind, joindate, joinip, lastip, lastvisit, notice_setting, openid, owner_uid, password, register_type, remark, salt, starttime, status, type, uid, username, welcome_link];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 130 in saasapi
+obj = Users.objects.get(accountId=request.data.get("accountId"))
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 394 in get
+clone = self.filter(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 836 in filter
+return self._filter_or_exclude(False, *args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 854 in _filter_or_exclude
+clone.query.add_q(Q(*args, **kwargs))
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\query.py line: 1253 in add_q
+clause, _ = self._add_q(q_object, self.used_aliases)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\query.py line: 1277 in _add_q
+split_subq=split_subq,
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\query.py line: 1153 in build_filter
+lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\query.py line: 1015 in solve_lookup_type
+_, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\query.py line: 1379 in names_to_path
+"Choices are: %s" % (name, ", ".join(available)))
+ 
+
+INFO [2019-11-17 00:54:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27824 28304 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'renewInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '3c45e1f3-22b9-4346-9898-4467d3aea000', 'signId': 'kjsadkjhdskjh3k', 'expiredTime': '2020-02-09 19:59:59'} ---
+         
+
+INFO [2019-11-17 00:54:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27824 28304 
+ 	 实例不存在! kjsadkjhdskjh3k;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 131 in saasapi
+saasObj = Saas.objects.get(signId=request.data.get("signId"))
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\manager.py line: 82 in manager_method
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 403 in get
+self.model._meta.object_name
+ 
+
+ERROR [2019-11-17 00:54:23] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 27824 28304 
+ 	 [SaasAPIView : saasapi  ] : [实例不存在!];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 134 in saasapi
+raise PubErrorCustom("实例不存在!")
+ 
+
+INFO [2019-11-17 00:55:34] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 27824 25888 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'renewInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '3c45e1f3-22b9-4346-9898-4467d3aea000', 'signId': '20191117004546001', 'expiredTime': '2020-02-09 19:59:59'} ---
+         
+
+ERROR [2019-11-17 00:55:34] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 27824 25888 
+ 	 [SaasAPIView : saasapi  ] : [(1048, "Column 'endtime' cannot be null")];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 143 in saasapi
+obj.save()
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 729 in save
+force_update=force_update, update_fields=update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 759 in save_base
+updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 823 in _save_table
+forced_update)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\base.py line: 872 in _do_update
+return filtered._update(values) > 0
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\query.py line: 709 in _update
+return query.get_compiler(self.db).execute_sql(CURSOR)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1379 in execute_sql
+cursor = super().execute_sql(result_type)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\models\sql\compiler.py line: 1068 in execute_sql
+cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 100 in execute
+return super().execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 68 in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 77 in _execute_with_wrappers
+return executor(sql, params, many, context)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\utils.py line: 85 in _execute
+return self.cursor.execute(sql, params)
+;C:\Users\Tc\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\mysql\base.py line: 76 in execute
+raise utils.IntegrityError(*tuple(e.args))
+ 
+
+INFO [2019-11-17 00:56:27] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 28196 25632 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'renewInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '3c45e1f3-22b9-4346-9898-4467d3aea000', 'signId': '20191117004546001', 'instanceExpireTime': '2020-02-09 19:59:59'} ---
+         
+
+INFO [2019-11-17 00:56:27] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 28196 25632 
+ 	 [SaasAPIView : saasapi]Training complete in 0.051867 real seconds 
+
+INFO [2019-11-17 01:00:48] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 24732 28052 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'modifyInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '1d8326b2-9a94-4bf3-91ce-c7a94add99d3', 'signId': '20191117004546001', 'spec': '高级版', 'timeSpan': 2, 'timeUnit': 'm'} ---
+         
+
+ERROR [2019-11-17 01:00:48] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 31 error 24732 28052 
+ 	 [SaasAPIView : saasapi  ] : ['NoneType' object has no attribute 'get'];C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 115 in wrapper
+response=self.__run(func,outside_self,request,*args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\lib\core\decorator\response.py line: 84 in __run
+res = func(outside_self, request, *args, **kwargs)
+;C:\Users\Tc\Desktop\saasTx\app\saas\api.py line: 159 in saasapi
+obj.endtime= timeHandler(request.data.get("productInfo").get("timeSpan"),request.data.get("productInfo").get("timeUnit"))
+ 
+
+INFO [2019-11-17 01:02:11] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 28760 28900 
+ 	 
+            request data: 
+
+             --- <QueryDict: {'signature': ['e3k9ierw'], 'timestamp': ['1483944926'], 'eventId': ['1780012140']}> --- 
+
+             --- {'action': 'modifyInstance', 'orderId': '20170109199524', 'accountId': '123545678', ' openId ': 'xz_D4XL_u7hKY5zt', 'productId': 1024, 'requestId': '1d8326b2-9a94-4bf3-91ce-c7a94add99d3', 'signId': '20191117004546001', 'spec': '高级版', 'timeSpan': 2, 'timeUnit': 'm'} ---
+         
+
+INFO [2019-11-17 01:02:11] C:\Users\Tc\Desktop\saasTx\lib\utils\log.py 38 info 28760 28900 
+ 	 [SaasAPIView : saasapi]Training complete in 0.042884 real seconds 
+
