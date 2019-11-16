@@ -129,8 +129,8 @@ if __name__ == '__main__':
 
     stringNew = sortKeyStringForDict(dict(
         token = "Jz42PV7Bz1aVVV7vl2N26pcLlpzL67",
-        timestamp="1573929059",
-        eventId="1602635970"
+        timestamp="1573932710",
+        eventId="1507048028"
     ))
 
     sign = sha256hex(stringNew)

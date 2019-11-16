@@ -54,7 +54,8 @@ def signCheckForTx(signature, timestamp, eventId):
 
     sign = sha256hex(stringNew)
 
-    if signature != sign:
-        logger.info("{}----{}".format(signature,sign))
-        raise PubErrorCustom("签名错误!")
+    logger.info("{}----{}".format(signature, sign))
+    # if signature != sign:
+    #     logger.info("{}----{}".format(signature,sign))
+    #     raise PubErrorCustom("签名错误!")
 
