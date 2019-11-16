@@ -26,10 +26,10 @@ class SaasAPIView(viewsets.ViewSet):
              --- {} ---
         """.format(request.query_params,request.data))
 
-        # signCheckForTx(
-        #     request.query_params.get("signature"),
-        #     request.query_params.get("timestamp"),
-        #     request.query_params.get("eventId"))
+        signCheckForTx(
+            request.query_params.get("signature"),
+            request.query_params.get("timestamp"),
+            request.query_params.get("eventId"))
 
         #身份校验
         if request.data.get("action") == 'verifyInterface':
@@ -82,7 +82,7 @@ class SaasAPIView(viewsets.ViewSet):
                 api_return["additionalInfo"]=[
                     {
                         "name": "官网地址",
-                        "value": "https://www.aihangge.com"
+                        "value": "https://api.aihangge.com"
                     },
                     {
                         "name": "登陆网址",
@@ -98,14 +98,14 @@ class SaasAPIView(viewsets.ViewSet):
                     },
                     {
                         "name": "温馨提示",
-                        "value": "如果您需要帮助请联系官网客服人员（电话：15176427685）同微信"
+                        "value": "如果您需要帮助请联系官网客服人员（电话：15176427685）同微信，我司所有系统，每个用户只能免费体验一次，如您希望再次免费体验请联系客服"
                     },
                 ]
             else:
                 api_return["additionalInfo"]=[
                     {
                         "name": "官网地址",
-                        "value": "https://www.aihangge.com"
+                        "value": "https://api.aihangge.com"
                     },
                     {
                         "name": "提醒说明",
@@ -117,7 +117,7 @@ class SaasAPIView(viewsets.ViewSet):
                     },
                     {
                         "name": "温馨提示",
-                        "value": "如果您需要帮助请联系官网客服人员（电话：15176427685）同微信"
+                        "value": "如果您需要帮助请联系官网客服人员（电话：15176427685）同微信，我司所有系统，每个用户只能免费体验一次，如您希望再次免费体验请联系客服"
                     },
                 ]
 
