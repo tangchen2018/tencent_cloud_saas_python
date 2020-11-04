@@ -49,7 +49,7 @@ class SaasAPIView(viewsets.ViewSet):
                 today = UtilTime().timestamp
                 userObj = Users.objects.create(**dict(
                     username  = request.data.get("accountId"),
-                    endtime = timeHandler(request.data.get("productInfo").get("timeSpan"),request.data.get("productInfo").get("timeUnit")),
+                    endtime = timeHandler(int(request.data.get("productInfo").get("timeSpan")),request.data.get("productInfo").get("timeUnit")),
                     password = passwordhash(password,salt),
                     salt = salt,
                     joinip = ip,
