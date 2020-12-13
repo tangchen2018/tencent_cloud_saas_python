@@ -13,6 +13,3 @@ redis
 arrow==0.15.0
 demjson
 django_crontab
-geoip2
-pyotp
-cryptokit
