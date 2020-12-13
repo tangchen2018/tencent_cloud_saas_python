@@ -168,12 +168,13 @@ class SaasAPIView(viewsets.ViewSet):
         elif request.data.get("action") == 'expireInstance':
             try:
                 obj = Users.objects.get(username=request.data.get("accountId"))
-            except Saas.DoesNotExist:
+                obj.endtime = UtilTime().today.replace(seconds=-1).timestamp
+                obj.save()
+            except Users.DoesNotExist:
                 logger.info("账号不存在! {}".format(request.data.get("accountId")))
-                raise PubErrorCustom("账号不存在!")
+                # raise PubErrorCustom("账号不存在!")
 
-            obj.endtime = UtilTime().today.replace(seconds=-1).timestamp
-            obj.save()
+
             return {"success": True}
         #实例销毁通知接口
         elif request.data.get("action") == 'destroyInstance':
