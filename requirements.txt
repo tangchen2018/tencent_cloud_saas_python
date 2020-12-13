@@ -10,7 +10,7 @@ django-cors-headers
 openpyxl
 django-redis
 redis
-arrow
+arrow==0.15.0
 demjson
 django_crontab
 geoip2
