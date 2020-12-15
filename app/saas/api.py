@@ -168,7 +168,7 @@ class SaasAPIView(viewsets.ViewSet):
         elif request.data.get("action") == 'expireInstance':
             try:
                 obj = Users.objects.get(username=request.data.get("accountId"))
-                obj.endtime = UtilTime().today.replace(seconds=-1).timestamp
+                obj.endtime = UtilTime().today.shift(minutes=-1).timestamp
                 obj.save()
             except Users.DoesNotExist:
                 logger.info("账号不存在! {}".format(request.data.get("accountId")))
